@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmnoura | Audits, credentialing, clinical programs and training for Illinois pharmacies</title>
+<meta name="description" content="Pharmnoura, Inc. helps Illinois pharmacies with audit readiness, pharmacist credentialing, clinical program setup and staff training. Run by pharmacists who own independent pharmacies.">
+<link rel="canonical" href="https://pharmnoura.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pharmnoura.com/">
+<meta property="og:title" content="Pharmnoura | Pharmacy Compliance Services">
+<meta property="og:description" content="Audits, credentialing, clinical programs and training for Illinois pharmacies.">
+<meta property="og:image" content="https://pharmnoura.com/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1190CB">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1190CB;
+    --blue-dark:#0D73A2;
+    --petal:#7DCBFF;
+    --tint:#BEE5FF;
+    --tint-light:#E6F4FF;
+    --ink:#1F2A37;
+    --muted:#4B5A66;
+    --paper:#FCFCFC;
+    --line:#D9E6EF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Quicksand,Inter,system-ui,sans-serif;line-height:1.15;font-weight:700;color:var(--ink)}
+  a{color:var(--blue-dark)}
+  ul{padding-left:1.2em}
+  li{margin:6px 0}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--blue-dark);padding:10px 14px;z-index:100}
+  .skip:focus{left:12px;top:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border-radius:10px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid transparent}
+  .btn-blue{background:var(--blue);color:#fff}
+  .btn-blue:hover{background:var(--blue-dark)}
+  .btn-white{background:#fff;color:var(--blue-dark)}
+  .btn-white:hover{background:var(--tint-light)}
+  .btn-outline{background:transparent;color:var(--blue-dark);border-color:var(--blue)}
+  .btn-outline:hover{background:var(--tint-light)}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(252,252,252,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;max-width:1080px;margin:0 auto}
+  .nav img{height:52px;width:auto;display:block}
+  .nav .btn{min-height:44px;padding:10px 18px;font-size:15px}
+
+  .hero{background:var(--blue);color:#fff;padding:64px 0 56px}
+  .hero .eyebrow{font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--tint);margin-bottom:14px}
+  .hero h1{color:#fff;font-size:42px;max-width:22em;margin-bottom:18px}
+  .hero .lede{font-size:20px;max-width:36em;margin-bottom:28px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero .link-white{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:4px;padding:12px 4px;display:inline-block}
+  .hero .micro{margin-top:18px;font-size:15px;color:var(--tint-light)}
+  .hero .micro a{color:#fff}
+
+  .proof{background:#fff;border-bottom:1px solid var(--line);padding:32px 0}
+  .proof h2{font-size:18px;color:var(--blue-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:18px;text-align:center}
+  .proof ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .proof li{margin:0;padding:16px 18px;border-left:4px solid var(--petal);background:var(--paper);border-radius:8px;font-weight:500}
+
+  section.band{padding:64px 0}
+  .band.tint{background:var(--tint-light)}
+  .sec-head{max-width:40em;margin:0 auto 36px;text-align:center}
+  .sec-head h2{font-size:32px;margin-bottom:10px}
+  .sec-head p{color:var(--muted);font-size:18px}
+
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--petal);border-radius:12px;padding:26px 26px 22px;display:flex;flex-direction:column}
+  .card .icon{width:48px;height:48px;color:var(--blue);margin-bottom:14px}
+  .card h3{font-size:23px;margin-bottom:8px}
+  .card .outcome{font-weight:600;color:var(--blue-dark);margin-bottom:12px}
+  .card ul{margin-bottom:8px}
+  .card .sub{font-size:15.5px;color:var(--muted);margin:6px 0}
+  .card .btn{margin-top:auto;align-self:flex-start}
+  .card-foot{margin-top:14px}
+  .also{max-width:52em;margin:30px auto 0;padding:20px 22px;background:#fff;border:1px solid var(--line);border-radius:12px;font-size:16px}
+  .also p{margin:6px 0}
+
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+  .step{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px 22px}
+  .step .num{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font-family:Quicksand,sans-serif;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .step h3{font-size:21px;margin-bottom:8px}
+  .steps-foot{text-align:center;margin-top:30px}
+  .steps-foot p{margin-bottom:18px;font-weight:500}
+
+  .why ul{max-width:48em;margin:0 auto}
+  .why li{padding:10px 0 10px 14px;border-left:4px solid var(--petal);margin:10px 0;background:#fff;border-radius:0 8px 8px 0;padding-right:14px}
+
+  .who{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  .who h2{font-size:32px;margin-bottom:14px}
+  .team{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+  .team h3{font-size:20px;margin-bottom:12px;color:var(--blue-dark)}
+  .person{padding:12px 0;border-top:1px solid var(--line)}
+  .person:first-of-type{border-top:0}
+  .person strong{display:block;font-size:18px}
+  .person span{color:var(--muted);font-size:16px}
+
+  .faq{max-width:48em;margin:0 auto}
+  .qa{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:12px 0}
+  .qa h3{font-size:19px;margin-bottom:6px}
+
+  .contact{background:var(--blue);color:#fff;padding:64px 0}
+  .contact .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+  .contact h2{color:#fff;font-size:34px;margin-bottom:14px}
+  .contact p{font-size:18px;margin-bottom:10px}
+  .contact a{color:#fff}
+  .contact .btn{margin-top:14px}
+  .contact address{font-style:normal;line-height:1.6;font-size:17px}
+  .contact img{width:min(320px,100%);height:auto;display:block;margin-bottom:18px}
+
+  footer{background:#0B2B3A;color:#CFE6F3;padding:28px 0;font-size:15px}
+  footer p{margin:6px 0}
+  footer .fine{color:#9FC5D9;font-size:14px}
+
+  @media(max-width:860px){
+    .hero h1{font-size:32px}
+    .hero .lede{font-size:18px}
+    .proof ul{grid-template-columns:1fr 1fr}
+    .cards{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .who,.contact .grid{grid-template-columns:1fr}
+    .sec-head h2,.who h2{font-size:28px}
+    .nav img{height:44px}
+  }
+  @media(max-width:520px){
+    body{font-size:17px}
+    .proof ul,.steps{grid-template-columns:1fr}
+    .hero{padding:44px 0 40px}
+    .hero h1{font-size:28px}
+    .cta-row .btn{width:100%}
+    .nav .btn{padding:10px 14px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#services">Skip to the services</a>
+
+<header>
+  <div class="nav">
+    <a href="#top" aria-label="Pharmnoura home"><img src="img/logo-600.png" srcset="img/logo-600.png 600w, img/logo-1200.png 1200w" sizes="240px" alt="Pharmnoura. Pharmacy Compliance Services." width="600" height="129"></a>
+    <a class="btn btn-blue" href="mailto:m@alahmeds.com?subject=Pharmnoura%20service%20question&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0AWhat%20you%20need%20help%20with%20(audits%2C%20credentialing%2C%20clinical%20services%2C%20training)%3A%0A">Email us</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Pharmnoura, Inc. Pharmacy Compliance Services</p>
+    <h1>Audits, credentialing, clinical programs and training for Illinois pharmacies.</h1>
+    <p class="lede">Pharmnoura is run by pharmacists who own independent pharmacies in Joliet, New Lenox and Aurora. We set up the same programs in your store. Pick the service you need below.</p>
+    <div class="cta-row">
+      <a class="btn btn-white" href="mailto:m@alahmeds.com?subject=Pharmnoura%20service%20question&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0AWhat%20you%20need%20help%20with%20(audits%2C%20credentialing%2C%20clinical%20services%2C%20training)%3A%0A">Email us about a service</a>
+      <a class="link-white" href="#services">See the four services</a>
+    </div>
+    <p class="micro">Or email us directly at <a href="mailto:m@alahmeds.com">m@alahmeds.com</a>.</p>
+  </div>
+</section>
+
+<section class="proof" aria-labelledby="proof-h">
+  <div class="wrap">
+    <h2 id="proof-h">Proof at a glance</h2>
+    <ul>
+      <li>Illinois corporation formed in 2017.</li>
+      <li>100 percent owned by a licensed Illinois pharmacist.</li>
+      <li>Our leaders own and operate independent pharmacies in Joliet, New Lenox and Aurora.</li>
+      <li>13 Illinois pharmacist clinical services covered, from vaccines to HIV PrEP (HIV prevention medicine).</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="services" aria-labelledby="services-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="services-h">Pick the service you need.</h2>
+      <p>Tell us which service fits your pharmacy. We will scope the work with you.</p>
+    </div>
+    <div class="cards">
+
+      <article class="card">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="8" width="28" height="34" rx="3"/><path d="M18 8h12v5H18z"/><path d="M17 27l5 5 9-10"/></svg>
+        <h3>Audit readiness</h3>
+        <p class="outcome">Find gaps in your charts and claims before a payer does.</p>
+        <ul>
+          <li>A baseline review of your workflows, documentation and billing.</li>
+          <li>Quarterly chart and claims audits.</li>
+          <li>A written list of fixes and a progress report for the owner.</li>
+        </ul>
+        <div class="card-foot"><a class="btn btn-outline" href="mailto:m@alahmeds.com?subject=Pharmnoura%3A%20Audit%20readiness&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0A">Ask about audits</a></div>
+      </article>
+
+      <article class="card">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="10" width="32" height="28" rx="3"/><circle cx="19" cy="22" r="4"/><path d="M12 33c1.5-4 4-6 7-6s5.5 2 7 6"/><path d="M28 19h8M28 25h8"/></svg>
+        <h3>Pharmacist credentialing</h3>
+        <p class="outcome">Get your pharmacists licensed, certified and enrolled with payers.</p>
+        <ul>
+          <li>License tracking with IDFPR (the Illinois licensing agency) and NPI numbers (national provider numbers).</li>
+          <li>Certifications for immunization, contraception, test-and-treat and BLS (basic life support).</li>
+          <li>Certifications for HIV PrEP and PEP (prevention medicine taken before or after exposure).</li>
+          <li>Enrollment paperwork for Illinois Medicaid through IMPACT (the state's provider enrollment system).</li>
+          <li>Enrollment with HealthChoice Illinois plans (Medicaid managed care plans), CAQH (the shared credentialing database), commercial plans and Medicare.</li>
+        </ul>
+        <div class="card-foot"><a class="btn btn-outline" href="mailto:m@alahmeds.com?subject=Pharmnoura%3A%20Pharmacist%20credentialing&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0A">Ask about credentialing</a></div>
+      </article>
+
+      <article class="card">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 6h10v8l7 20a6 6 0 01-6 8H18a6 6 0 01-6-8l7-20z"/><path d="M15 30h18"/></svg>
+        <h3>Clinical program setup</h3>
+        <p class="outcome">Launch paid clinical services with the policies and billing already in place.</p>
+        <ul>
+          <li>Standing orders and collaborative practice agreements with physicians.</li>
+          <li>A policies and procedures manual, plus a step-by-step procedure for each service.</li>
+          <li>Billing setup for medical and pharmacy claims, Medicaid, commercial plans and Medicare.</li>
+        </ul>
+        <p class="sub">Services covered: vaccines, hormonal contraception, HIV PrEP and PEP, naloxone.</p>
+        <p class="sub">Test-and-treat covered: flu, COVID-19, strep, RSV (a common lung virus) and head lice.</p>
+        <div class="card-foot"><a class="btn btn-outline" href="mailto:m@alahmeds.com?subject=Pharmnoura%3A%20Clinical%20program%20setup&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0A">Ask about program setup</a></div>
+      </article>
+
+      <article class="card">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="5"/><circle cx="32" cy="16" r="5"/><path d="M6 38c1-7 5-11 10-11s9 4 10 11"/><path d="M22 38c1-7 5-11 10-11s9 4 10 11"/></svg>
+        <h3>Pharmacist and staff training</h3>
+        <p class="outcome">Every team member trained and signed off, with records to prove it.</p>
+        <ul>
+          <li>On-site sessions, shadowing and online modules for pharmacists, technicians, front-end and billing staff.</li>
+          <li>A competency checklist and a training record for each employee.</li>
+          <li>Train-the-trainer handoff so your team runs it after we leave.</li>
+        </ul>
+        <div class="card-foot"><a class="btn btn-outline" href="mailto:m@alahmeds.com?subject=Pharmnoura%3A%20Staff%20training&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0A">Ask about training</a></div>
+      </article>
+
+    </div>
+    <div class="also">
+      <p><strong>Also available:</strong> full-time clinical pharmacist placement, diabetes program accreditation and HIPAA-compliant AI tools.</p>
+      <p>Diabetes accreditation covers DSMES (diabetes self-management education and support). It also covers the Diabetes Prevention Program of the CDC (the federal disease control agency).</p>
+      <p>AI tools are set up under business associate agreements. These are the HIPAA (federal health privacy law) contracts that bind the vendor.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band tint" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="how-h">Four steps. Then your team runs it.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Start</h3><p>We review your workflows, documentation and billing. You get a written baseline.</p></div>
+      <div class="step"><div class="num">2</div><h3>Build</h3><p>We complete licensing and credentialing, write the policies and set up billing.</p></div>
+      <div class="step"><div class="num">3</div><h3>Run</h3><p>Services go live. We train your team and audit charts and claims every quarter.</p></div>
+      <div class="step"><div class="num">4</div><h3>Hand off</h3><p>Your team gets the final manual, the procedure library and train-the-trainer sessions.</p></div>
+    </div>
+    <div class="steps-foot">
+      <p>A full program runs 12 months with quarterly audits.</p>
+      <a class="btn btn-blue" href="mailto:m@alahmeds.com?subject=Pharmnoura%20service%20question&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0AWhat%20you%20need%20help%20with%20(audits%2C%20credentialing%2C%20clinical%20services%2C%20training)%3A%0A">Email us about a service</a>
+    </div>
+  </div>
+</section>
+
+<section class="band why" id="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="why-h">Illinois now pays pharmacists for clinical care.</h2>
+    </div>
+    <ul>
+      <li>State-regulated Illinois health plans must cover pharmacist contraception and HIV PrEP and PEP services. This applies to plans issued or renewed on or after January 1, 2023.</li>
+      <li>They must also cover flu and COVID-19 vaccines, COVID-19 treatment and test-and-treat given by pharmacists. This applies to plans issued or renewed on or after January 1, 2025.</li>
+      <li>Coverage applies to in-network pharmacists at a negotiated rate.</li>
+      <li>Illinois Medicaid pays credentialed pharmacists for covered services. For example, HIV PrEP and PEP consultations pay 85 percent of the physician rate.</li>
+      <li>Payment depends on correct credentialing and documentation.</li>
+      <li>Payers make the final enrollment and payment decisions.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band tint" id="who" aria-labelledby="who-h">
+  <div class="wrap who">
+    <div>
+      <h2 id="who-h">We use these programs in our own stores.</h2>
+      <ul>
+        <li>Pharmnoura is an Illinois corporation formed in 2017.</li>
+        <li>It is 100 percent owned by a licensed Illinois pharmacist. Pharmacist owned and woman owned.</li>
+        <li>Our leaders own and run independent community pharmacies in Joliet, New Lenox and Aurora.</li>
+        <li>Every policy and checklist is built from the source law and payer rules.</li>
+        <li>Sources: Illinois Pharmacy Practice Act, SB 3268 (Illinois Senate Bill 3268 on pharmacist services), Illinois Insurance Code.</li>
+        <li>Also: HFS (the Illinois Medicaid agency) notices, CMS (the federal Medicare agency) guidance and CDC guidance.</li>
+      </ul>
+    </div>
+    <div class="team">
+      <h3>Team</h3>
+      <div class="person"><strong>Noura Alahmed, PharmD</strong><span>Doctor of pharmacy. President and owner. Illinois Registered Pharmacist.</span></div>
+      <div class="person"><strong>Mohammed Alahmed, RPh</strong><span>Registered pharmacist. Program Director. Leads training design, payer credentialing and billing workflows.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="faq-h">Questions owners ask first.</h2>
+    </div>
+    <div class="faq">
+      <div class="qa"><h3>Do you guarantee payer enrollment or payment?</h3><p>No. We prepare and file complete applications and work the denials. Payers make the final decision.</p></div>
+      <div class="qa"><h3>How long does a program take?</h3><p>A full program runs 12 months with quarterly audits. Tell us what you need and we will scope it with you.</p></div>
+      <div class="qa"><h3>If you place a clinical pharmacist in our store, who employs them?</h3><p>Pharmnoura would. We would cover their license, certification, credentialing and insurance costs.</p></div>
+      <div class="qa"><h3>Where do you work?</h3><p>Illinois pharmacies. Our office is in Orland Park.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap grid">
+    <div>
+      <h2 id="contact-h">Tell us which service you need.</h2>
+      <p>Email <a href="mailto:m@alahmeds.com">m@alahmeds.com</a>.</p>
+      <p>Include your pharmacy name, your city and the service you want.</p>
+      <p>A pharmacist will reply.</p>
+      <a class="btn btn-white" href="mailto:m@alahmeds.com?subject=Pharmnoura%20service%20question&amp;body=Pharmacy%20name%3A%0ACity%3A%0ABest%20phone%3A%0AWhat%20you%20need%20help%20with%20(audits%2C%20credentialing%2C%20clinical%20services%2C%20training)%3A%0A">Email us about a service</a>
+    </div>
+    <div>
+      <img src="img/logo-white-600.png" alt="Pharmnoura" width="600" height="129">
+      <address>
+        Pharmnoura, Inc.<br>
+        15434 S. 70th Court, Unit E<br>
+        Orland Park, IL 60462
+      </address>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Pharmnoura, Inc. is an Illinois corporation. Pharmacy Compliance Services.</p>
+    <p>Copyright 2026 Pharmnoura, Inc.</p>
+    <p class="fine">Payer enrollment and payment are decided by each payer. Pharmnoura does not guarantee enrollment or reimbursement.</p>
+  </div>
+</footer>
+</body>
+</html>
